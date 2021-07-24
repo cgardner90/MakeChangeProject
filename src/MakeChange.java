@@ -35,24 +35,23 @@ public class MakeChange {
 				if (amountOwed % 1 !=0) {
 					
 					double centsOwed = (amountOwed % 1);
-					while(centsOwed > 0) {
-						if (centsOwed%0.25 == 0) {
-							int quarters = (int) (centsOwed/0.25);
-							System.out.println("Quarters: "+ quarters);
-							centsOwed = 0;
-						}
-						else {
-							
-						}
-					}
-				
-				
+					int quarters = (int)(centsOwed/0.25);
+					int dimes = (int)(centsOwed/0.10);
+					int nickels =(int)(centsOwed/0.05);
+					int pennies = (int)(centsOwed/0.01);
+					
+					System.out.println("Quarters: " + quarters+" Dimes: "+  dimes + " Nickels: "+  nickels + " Pennies: " +pennies);
+					
+					
 				}
 		}
-		
-		
 	}
-	
-	
-	
 }
+
+		
+		
+	
+	
+	
+	
+
