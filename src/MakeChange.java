@@ -73,9 +73,7 @@ public class MakeChange {
 						if (nickels > 0) {
 							System.out.print("\t Nickels: " + nickels);
 							centsOwed = (centsOwed - (nickels * 0.05));
-							if(centsOwed<=0.04) {
-								centsOwed = centsOwed + 0.01;
-							}
+							
 						}
 			
 						int pennies = (int)(centsOwed / 0.01);
